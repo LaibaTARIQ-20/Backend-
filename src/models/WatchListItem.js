@@ -17,7 +17,11 @@ const watchlistSchema = new mongoose.Schema(
       enum: ["PLANNED", "WATCHING", "COMPLETED", "DROPPED"],
       default: "PLANNED",
     },
-    rating: { type: Number, min: 1, max: 10 },
+    rating: {
+      type: Number,
+      min: 1,
+      max: 10,
+    },
     notes: { type: String },
   },
   { timestamps: true },
